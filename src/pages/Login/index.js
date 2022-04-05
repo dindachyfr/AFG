@@ -18,13 +18,18 @@ const Login = observer(() => {
         setForm({...form, [e.target.name]: e.target.value})
     }
     const handleLogin = async () => {
-        const res = await axios.post(`${process.env.REACT_APP_URL}/users/login`, form)
-        const {data} = res
-        const user = data.data
-        const token = user.token
-        Store.setToken(token)
-        localStorage.setItem('token', token)
-        navigate('/')
+        try{
+            const res = await axios.post(`${process.env.REACT_APP_URL}/users/login`, form)
+            const {data} = res
+            const user = data.data
+            const token = user.token
+            Store.setToken(token)
+            localStorage.setItem('token', token)
+            navigate('/')
+            }catch(err) {
+                const message = err
+                Store.setErrMsg(message.response.data.message)
+                }
     }
     return (
         <main className={`${styles.con} container-fluid g-0 w-100 bg-light d-flex flex-lg-row flex-column`}>
@@ -83,10 +88,10 @@ const Login = observer(() => {
                 onClick={handleLogin}>
                     Login
                 </Button>
+                {Store.errMsg && <h4 className='text-danger'>{Store.errMsg}</h4> }
                 <p className={`text-center fw-bold pointer mt-3 ${styles.fgpw}`}>Forgot Password?</p>
                 <p className={`text-center fw-bold mb-0`}>Don’t have an account?
                 <span className={`${styles.fgpw} pointer`}> Create an account</span></p>
-
             </section>
         </main>
     )
