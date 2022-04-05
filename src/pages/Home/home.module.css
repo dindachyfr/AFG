@@ -1,0 +1,42 @@
+.con{
+    min-height: 100vh;
+}
+
+.footer{
+    height: 5vh;
+}
+
+.btnLogin{
+    border: 0;
+}
+
+.boxes{
+    width: 580px;
+    height: 366pxs;
+}
+
+.beam2{
+    height: 400px;
+    width: 200px;
+}
+
+@media screen and (min-width: 240px) and (max-width: 769px){
+    .logo{
+        width: 25vw;
+    }
+    .boxes{
+        width: 30vw;
+    }
+    .boxestext{
+        width: 60vw;
+    }
+    .beam2{
+        width: 50vw;
+        margin: auto;
+    }
+
+    .beam2text{
+        width: 70vw!important;
+    }
+    
+}

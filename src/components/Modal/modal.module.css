@@ -1,0 +1,19 @@
+.modalNotif{
+    position: absolute;
+    border-radius: .25rem;
+    box-shadow: inset 0px 0.899671px 4.49835px rgba(0, 0, 0, 0.1);;
+    top: 15vh;
+    right: 1.7rem;
+    min-width: 24vw;
+}
+
+@media screen and (min-width: 240px) and (max-width: 769px){
+    .modalNotif{
+        right: 1rem;
+        top: 9vh;
+    }
+    .modalNotif :hover {
+        background-color: transparent!important;
+    }
+    
+}

@@ -1,0 +1,64 @@
+.con{
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.leftBox {
+    background: url("../../assets/Group\ 2968.svg") no-repeat;
+    height: 100vh;
+    width: 50vw;
+    background-size: cover;
+}
+
+.paddingLeft{
+    padding: 3rem 5rem;
+}
+
+.title{
+    width: 166px;
+    height: 60px;
+}
+
+.mainPic{
+    width: 50vw;
+    height: 600px;
+}
+
+.rightBox{
+    padding: 3rem 5rem;
+}
+
+.inputForm{
+    outline: none;
+    border: 0px;
+    box-shadow: inset 0px 0.899671px 4.49835px rgba(0, 0, 0, 0.1);;
+}
+
+.btnLogin{
+    border: 0;
+}
+
+.fgpw{
+    color:#00ACEE;
+}
+
+@media screen and (min-width: 240px) and (max-width: 769px){
+    .rightBox{
+        width: 100%!important;
+        padding: 3rem 1.5rem;
+    }
+    .leftBox{
+        background: url("../../assets/authMobil.svg") no-repeat;
+        height: 250vh;
+        width: 100vw;
+        background-size: cover;
+        padding: 3rem 1.5rem;
+    }
+    .paddingLeft{
+        padding: 0;
+    }
+    .con{
+        min-height: 100vh;
+        overflow-y: auto;
+    }
+}

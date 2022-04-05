@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.text-danger{
+  color: #EB2730!important
+}
+
+.bg-danger{
+  background-color: #EB2730!important
+}
+
+.bg-blue{
+  background-color: #3A589B;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.bg-blue-light{
+  background-color: #31485F;
+}
+
+.text-grey{
+  color: #DDDDDD;
+}
+
+.bg-grey{
+  background-color: #DDDDDD;
+}
