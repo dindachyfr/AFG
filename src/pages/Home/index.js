@@ -88,7 +88,7 @@ const Home = observer(() => {
                     <div className={`w-50 px-3 ${styles.boxestext}`}>
                         <div className="w-100 bg-danger text-white rounded-3 p-3 text-center text-capitalize">Call us on +65 3129 4445</div>
                         <div className="w-100 bg-danger text-white rounded-3 my-3 p-3 text-center text-capitalize">Email us</div>
-                        <div className="w-100 bg-danger text-white rounded-3 p-3 text-center text-capitalize">Chat widh us</div>
+                        <div className="w-100 bg-danger text-white rounded-3 p-3 text-center text-capitalize">Chat with us</div>
                     </div>
                 </div>
             </section>
